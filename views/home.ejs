@@ -1,0 +1,17 @@
+<%- include("partial/header");-%>
+<body><h1>HOME</h1>
+    <p><%= kindofparagraph %></p>
+    <button><a href="compose">write some blog</a></button>
+
+
+
+
+
+
+    <% posts.forEach(function(post){%>
+    <h1> <%= post.vill%></h1>
+      <p><%=post.eill.substring(0,50)+"..."%>
+      <a href="posts/<%=post.vill%>">Read more</a></p>
+   <% }) %>
+    <%- include("partial/footer");-%>
+    
